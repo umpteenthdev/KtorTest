@@ -43,6 +43,8 @@ fun performAllCases() {
         submitFormBinaryCase(client)
 
         getAndPrintWeather()
+
+        client.close()
     }
 }
 

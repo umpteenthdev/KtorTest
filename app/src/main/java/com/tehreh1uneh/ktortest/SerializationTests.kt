@@ -30,4 +30,5 @@ suspend fun getAndPrintWeather() {
     }
     val weather: Weather = client.get(SF_WEATHER_URL)
     Log.i("$BASE_TAG Serialization", weather.toString())
+    client.close()
 }
